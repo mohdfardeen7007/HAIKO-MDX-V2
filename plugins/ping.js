@@ -33,24 +33,12 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         const responseTime = (end - start) / 1000;
 
         const text = `╭━━〔 🛸 𝗣𝗜𝗡𝗚 𝗧𝗘𝗦𝗧 〕━━╮
-┃ 🤖 *BOT* : *HAIKO MDX V2*
+┃ 🤖 *BOT* : *𝐅𝖾ᥣ𝗂𝗑*
 ┃ ⏳ *PING* : *${responseTime.toFixed(2)}MS ${reactionEmoji}*
 ╰━━━━━━━━━━━━━━━━━━╯
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀɪᴋᴏ ᴍᴅx*`;
 
-        await conn.sendMessage(from, {
-            text,
-            contextInfo: {
-                mentionedJid: [sender],
-                forwardingScore: 999,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363398101781980@newsletter',
-                    newsletterName: "𝐇𝐀𝐈𝐊𝐎-𝐌𝐃𝐗-𝐕𝟐",
-                    serverMessageId: 143
-                }
-            }
-        }, { quoted: mek });
+       } , { quoted: mek });
 
     } catch (e) {
         console.error("Error in ping command:", e);
