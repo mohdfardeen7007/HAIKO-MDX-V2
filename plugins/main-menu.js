@@ -334,24 +334,11 @@ async (haiko, mek, m, { from, reply }) => {
 ┃╎➭  ʏᴛs
 ┃╎➭  ʏᴛᴠ
 ┃╰─────────────┈⊷
-┃       *𝚆𝙰 𝙱𝙾𝚃 𝟸𝟶𝟸𝟻-𝟸𝟶𝟸𝟼*
+┃       *𝐅𝖾ᥣ𝗂𝗑*
 ╰━━━━━━━━━━━━━━━━━┈⊷
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ ᴘʀᴏғ xᴛʀᴇᴍᴇ*`;
+> *𝐅𝖾ᥣ𝗂𝗑*`;
     
-await haiko.sendMessage(from, {
-      image: { url:`https://files.catbox.moe/3asym0.jpg`},
-      caption: haikomenu,
-      contextInfo: {
-        mentionedJid: [m.sender],
-        forwardingScore: 999,
-        isForwarded: true,
-        forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363398101781980@newsletter',
-          newsletterName: '𝐏𝐑𝐎𝐅-𝐗𝐓𝐑𝐄𝐌𝐄',
-          serverMessageId: 143
-        }
-      }
-    }, { quoted: mek });
+}, { quoted: mek });
 
     
   } catch (e) {
