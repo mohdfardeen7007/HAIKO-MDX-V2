@@ -341,18 +341,7 @@ async (haiko, mek, m, { from, reply }) => {
     haiko.sendMessage(from, { audio: { url: `https://files.catbox.moe/6ifekx.mp3` }, caption: haikomenu })
     
 await haiko.sendMessage(from, {
-      image: { url:`https://files.catbox.moe/nfanej.jpg`},
-      caption: haikomenu,
-      contextInfo: {
-        mentionedJid: [m.sender],
-        forwardingScore: 999,
-        isForwarded: true,
-        forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363398101781980@newsletter',
-          newsletterName: '𝐏𝐑𝐎𝐅-𝐗𝐓𝐑𝐄𝐌𝐄',
-          serverMessageId: 143
-        }
-      }
+      image: { url:`https://files.catbox.moe/nfanej.jpg`}
     }, { quoted: mek });
 
     
